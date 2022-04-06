@@ -25,10 +25,11 @@ public void suiteInitializer(String testCaseName) {
 	launchUrl(getpropvalue("url"));
 	
 }
-
+//Test
 @BeforeSuite
 public void testInitializer() {
 	reportStarter();
+	//sys
 }
 
 @AfterMethod
