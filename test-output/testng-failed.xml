@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="falseTest(failed)">
+    <classes>
+      <class name="testcases.CustomerTest">
+        <methods>
+          <include name="testInitializer"/>
+          <include name="suiteCloser"/>
+          <include name="suiteInitializer"/>
+          <include name="searchCustomerTitleValidation">
+            <parameter name="tc" value="FalsetitleValidation"/>
+          </include> <!-- searchCustomerTitleValidation -->
+          <include name="testCloserIT"/>
+        </methods>
+      </class> <!-- testcases.CustomerTest -->
+    </classes>
+  </test> <!-- falseTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

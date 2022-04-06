@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="testcases.CustomerTest">
+				<methods>
+					<include name="searchCustomerByName">
+						<parameter name="tc" value="SearchByCustomerName" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="emailTest">
+		<classes>
+			<class name="testcases.CustomerTest">
+				<methods>
+					<include name="searchCustomerByemail">
+						<parameter name="tc" value="SearchByEmailId" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="falseTest">
+		<classes>
+			<class name="testcases.CustomerTest">
+				<methods>
+					<include name="searchCustomerTitleValidation">
+						<parameter name="tc" value="FalsetitleValidation" />
+					</include>
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
